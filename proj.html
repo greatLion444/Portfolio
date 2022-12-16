@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Kristophe Yen Personal Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/6eecf286de.js" crossorigin="anonymous"></script>
+    </head>
+
+    <nav id = "topsec">
+        <img src="images/exaLog.png" class="logo">
+        <ul id = "sidemenu">
+            <li><a href="index.html">Home</a></li>
+            <!-- <li><a href="index.html">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li> -->
+            <i class="fas fa-solid fa-circle-xmark" onclick="closemenu()"></i>            
+        </ul>
+        <i class="fas fa-solid fa-bars"onclick = "openmenu()"></i>
+    </nav>
+
+        <!-- <div class="carousel">
+          <img src="image1.jpg" alt="Image 1">
+          <img src="image2.jpg" alt="Image 2">
+          <img src="image3.jpg" alt="Image 3">
+        </div> -->
+
+<!-- Slideshow container -->
+<div id = "forCol">
+  <div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="images/exaLog.png" style="width:100%">
+      <div class="text">Caption Text</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="images/GBTeamBackgroundOfficial.png" style="width:100%">
+      <div class="text">Caption Two</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="images/IMG_2593.PNG" style="width:100%">
+      <div class="text">Caption Three</div>
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+</div>
+
+<body>
+  <div class= "InfoSec reveal fade-bottom" id="GetLow">
+    <h1>Get Low Grandpa</h1>
+    <div id = "displaySec">
+    <div id = "gridPics">
+      <div class=" mosaic">
+      <div class="mosaic_item">
+        <img src="images/IMG_2579.PNG">
+      </div>
+      <div class="mosaic_item">
+        <img src="images/IMG_2583.PNG">
+      </div>
+    </div>
+    </div>
+    <p>This game is an endless side-scroller mobile-game I made with the Company massDigi over the summer. On this Project
+      I worked on the UI, coin collection, powerups, and user accessibility. I also helped to work on a procedural generation 
+      algorithm that would deploy obstacles in game based on the speed the user moves and the objects produced before. I was also 
+      the main organizer of the code on this game and was primarily responsible for the programming documentation. You can reach 
+      this game in the App Store 
+      <a href="https://apps.apple.com/iq/app/get-low-grandpa/id1630471330?platform=ipad"> Here</a>
+    </p>
+  </div>
+  </div>
+  </div>
+  <div class= "InfoSec reveal fade-right" id="Klos">
+    <h1>Kloset</h1>
+    <div id = "displaySec">
+      <img src="images/Screen Shot 2022-12-14 at 1.50.48 PM.png" id ="zoneImg">
+      <p> This website functions as almost a personal closet for some of the clothese that I want or already have 
+        On this assignment I was resposible for the creation of the whole website. I worked on the overall structure and design of the
+        website. I also worked on the websites functionality using React and JS. To reach this website 
+        press 
+        <a href="https://greatlion444.github.io/react-stencil/"> Here</a>
+      </p>
+    </div>
+
+  </div>
+  <div class= "InfoSec reveal fade-left" id ="prot">
+    <h1>Agape Prototype</h1>
+    <div id = "displaySec">
+    <div id = "gridPics">
+      <div class="mosaic">
+        <div class = "mosaic_item">
+          <img src="images/Screen Shot 2022-12-14 at 1.57.31 PM.png">
+        </div>
+        <div class="mosaic_item">
+        <img src="images/Screen Shot 2022-12-14 at 1.56.47 PM.png">
+        </div>
+      </div>
+    </div>
+    <div>
+    <p>In this assignment, I worked closely with a group in order to design an interactible interface. The interface is based on an already
+      existing company and the goal for this was to create what we though we properly represent the company through app. We designed this using Figma
+      To reach this prototype press
+      <a href="https://www.figma.com/proto/fndx4QKgOH4RAyCerbPCee/Iterative-Design-Figma?node-id=39%3A306&scaling=scale-down&page-id=0%3A1&starting-point-node-id=39%3A306"> Here</a>
+    </p>
+    </div>
+
+  </div>
+</body>
+
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        }
+    </script>
+
+<script>
+  function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+  var windowHeight = window.innerHeight;
+  var elementTop = reveals[i].getBoundingClientRect().top;
+  var elementVisible = 150;
+
+  if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+  } 
+  else {
+      reveals[i].classList.remove("active");
+  }
+  }
+}
+  window.addEventListener("scroll", reveal);
+</script>
+</html>

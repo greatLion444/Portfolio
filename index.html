@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Kristophe Yen Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6eecf286de.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav id = "topsec">
+        <img src="images/exaLog.png" class="logo">
+        <ul id = "sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-solid fa-circle-xmark" onclick="closemenu()"></i>            
+        </ul>
+        <i class="fas fa-solid fa-bars"onclick = "openmenu()"></i>
+    </nav>
+<div id="header">
+    <div class="contain">
+        <!-- This is meant to be where the circles will levatate through -->
+        <div class="area" >
+            <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
+        </div >
+        <div class="header-text">
+            <p>Software Engineer</p>
+            <h1>Hi, I'm <span> GreatLion </span> <br>from The Sahara</h1>
+        </div>
+    </div>
+</div>
+<!-- -------------about----------- -->
+<div id= "about">
+    <div class="container reveal fade-right container1">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/examAbout.jpg">
+            </div>
+            <div class="about-col1-2">
+                <h1 class="sub-title">About Me</h1>
+                <p> Hello!!! Nice to meet you my name is Kristophe I am currently studying Computer Science at Brown university.
+                    I am currently interested in Software Engineering, Game Development, and UI/Ux, but am always ready
+                    to learn more. I love playing games and watching soccer outside of work! Feel free to reach me in the contact 
+                    section if you have any questions.
+                </p>
+                <!-- This section describes all my experience and stuff that i have done -->
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                <div class="tab-contents active-tab" id= "skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Prototyping<br>Wireframing<br>Virtual Design</li>
+                        <li><span>Game Development</span><br>Game Design<br>Unity<br>Apple & Android Development</li>
+                        <li><span>Software Engineering</span><br>Program Documenting <br>Object-Oriented Design<br>Database Design</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>UI/UX</span><br>In-Game Shop Ui, MassDigi</li>
+                        <li><span>Game Development</span><br>Game Progrmaming Intern, MassDigi</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Brown University</span><br>Computer Science, B.A 2024</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                            <!-- Services -->
+                            <!-- Be sure to make changes with all the written boxes -->
+<div id = "services">
+    <div class = "container reveal fade-left container2">
+        <h1 class = "sub-title">
+            My-Services
+        </h1>
+        <div class="services-list">
+            <!-- Service 1 -->
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Will make website for comission or will take opporttunities such as jobs and internships requiring 
+                    a web devlopment skillset.
+                </p>
+                <a href="#">Learn More</a>
+            </div>
+            <!--Service 2  -->
+            <div>
+                <i class="fa-solid fa-ghost"></i>
+                <h2>Game Design</h2>
+                <p> Freelance and Independet game developer looking to join a team for any cool Projects. Will take opporttunities 
+                    such as jobs and internships requiring a game devlopment skillset.
+                </p>
+                <a href="#">Learn More</a>
+            </div>
+            <!-- Service 3 -->
+            <div>
+                <i class="fa-solid fa-computer"></i>
+                <h2>SWE</h2>
+                <p> Will help make algorithms or softwares within skillset for commision. Actively looking for internship opporttunities
+                    or job opporttunities to gain more experience.
+                </p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Portfolio -->
+<div id="portfolio">
+    <div class="container reveal fade-bottom container3">
+        <h1 class="sub-title">My Recent Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src ="images/IMG_2580.PNG"></img>
+                <div class="layer">
+                    <h3>
+                        Get Low Grandpa!
+                    </h3>
+                    <p>
+                        A 2D side-scroller and enless runner 
+                    </p>
+                    <!-- <a href="proj.html/div/.GetLow"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
+                </div>
+            </div>
+            <div class="work">
+                <img src ="images/Screen Shot 2022-12-12 at 5.23.28 PM.png"></img>
+                <div class="layer">
+                    <h3>
+                        Kloset
+                    </h3>
+                    <p>
+                        Personal record or my current and most desired clothing 
+                    </p>
+                    <!-- <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
+                </div>
+            </div>
+            <div class="work">
+                <img src ="images/Screen Shot 2022-12-12 at 5.44.41 PM.png"></img>
+                <div class="layer">
+                    <h3>
+                        Agape Prototype
+                    </h3>
+                    <p>
+                        Class Assignment about protyping already existing interfaces
+                    </p>
+                    <!-- <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
+                </div>
+            </div>
+        </div>
+        <a href="proj.html" class="btn">See More</a>
+    </div>
+</div>
+
+<!----------------------------- Contact ----------------------->
+<div id="contact">
+    <div class="container reveal fade-bottom container4">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                    <p> <i class="fa-solid fa-paper-plane"></i> contactsum@gmail.com</p>
+                    <p> <i class="fa-sharp fa-solid fa-phone"></i> 123456789</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                <a href="images/GBTeamBackgroundOfficial.png" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name ="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name..." required>
+                    <input type="email" name="Email" placeholder="Your Email..." required>
+                    <textarea type="Message" name="Message"rows="6" placeholder="Your Message..." required></textarea>
+                    <button type="submit" class="btn btn2">submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname)
+    {
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemen = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemen.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemen.style.right = "-200px"
+    }
+</script>
+</body>
+<!-------------------------Google Sheets----------->
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzojj0geGp9sj2yGg2Fj4DA5L1fqsy7QQo7TiboGwJJ6DEoVdvOVo81q33yizxgfHjS/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+  <script>
+    function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+
+    for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+    } 
+    else {
+        reveals[i].classList.remove("active");
+    }
+    }
+}
+    window.addEventListener("scroll", reveal);
+  </script>
+
+</html>
